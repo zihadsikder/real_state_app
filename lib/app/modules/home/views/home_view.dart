@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:real_state_app/app/core/constants/app_icons.dart';
 import 'package:real_state_app/app/core/widgets/custom_text.dart';
 import 'package:real_state_app/app/modules/home/views/widgets/property_card.dart';
-
 import '../../../core/config/app_colors.dart';
 import '../controllers/home_controller.dart';
 
