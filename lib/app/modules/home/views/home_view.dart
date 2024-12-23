@@ -36,13 +36,13 @@ class _HomeViewState extends State<HomeView>
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Location and Notification Icon
-              Row(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Location and Notification Icon
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
@@ -81,11 +81,14 @@ class _HomeViewState extends State<HomeView>
                   Image.asset(AppIcons.notification),
                 ],
               ),
+            ),
 
-              SizedBox(height: 16),
+            SizedBox(height: 16),
 
-              // Search Bar
-              Row(
+            // Search Bar
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Expanded(
@@ -122,11 +125,14 @@ class _HomeViewState extends State<HomeView>
                   )
                 ],
               ),
+            ),
 
-              SizedBox(height: 16),
+            SizedBox(height: 16),
 
-              // TabBar with Custom Styling
-              Container(
+            // TabBar with Custom Styling
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                 ),
@@ -153,29 +159,29 @@ class _HomeViewState extends State<HomeView>
                   ],
                 ),
               ),
+            ),
 
-              // TabBarView Content
-              Expanded(
-                child: TabBarView(
-                  controller: tabController,
-                  children: [
-                    SingleChildScrollView(
-                      child: Column(
-                        children: [
-                          PropertyCard(),
-                          SizedBox(height: 20),
-                          PropertyCard(), // Add more content as needed
-                        ],
-                      ),
+            // TabBarView Content
+            Expanded(
+              child: TabBarView(
+                controller: tabController,
+                children: [
+                  SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        PropertyCard(),
+                        SizedBox(height: 20),
+                        PropertyCard(), // Add more content as needed
+                      ],
                     ),
-                    Center(child: Text("Apartment Content")),
-                    Center(child: Text("Hotel Content")),
-                    Center(child: Text("Villa Content")),
-                  ],
-                ),
+                  ),
+                  Center(child: Text("Apartment Content")),
+                  Center(child: Text("Hotel Content")),
+                  Center(child: Text("Villa Content")),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

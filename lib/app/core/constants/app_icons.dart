@@ -14,6 +14,10 @@ class AppIcons {
   static const String search = '$imagePath/search.png';
   static const String setting = '$imagePath/setting.png';
   static const String bed = '$imagePath/bed.png';
+  static const String message = '$imagePath/IC_Message.png';
+  static const String phone = '$imagePath/IC_Phone.png';
+  static const String bathroom = '$imagePath/bathroom.png';
+  static const String bedroom = '$imagePath/bedroom.png';
 
 
 }
