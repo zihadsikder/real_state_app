@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:real_state_app/app/core/config/app_colors.dart';
 import 'package:real_state_app/app/core/constants/app_images.dart';
 
@@ -50,7 +52,9 @@ class PropertyDetailsScreen extends StatelessWidget {
                                 shape: BoxShape.circle),
                             child: Center(
                               child: IconButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Get.back();
+                                  },
                                   icon: Icon(
                                     Icons.arrow_back_ios,
                                     color: AppColors.bgColor,
