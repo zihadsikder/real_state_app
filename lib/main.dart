@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'app/core/bindings/controller_binder.dart';
 import 'app/routes/app_pages.dart';
 
 void main() {
@@ -9,7 +10,7 @@ void main() {
       title: "Application",
       debugShowCheckedModeBanner: false,
       initialRoute: AppPages.INITIAL,
-      //initialBinding: IntBinding(),
+      initialBinding: IntBinding(),
       themeMode: ThemeMode.system,
       getPages: AppPages.routes,
     ),

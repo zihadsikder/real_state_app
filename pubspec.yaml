@@ -19,6 +19,14 @@ dependencies:
   cupertino_icons: ^1.0.8
   get: ^4.6.6
   google_fonts: ^6.2.1
+  http: ^1.1.0
+  intl: ^0.18.1
+  logger: ^2.0.1
+  url_launcher: ^6.1.12
+  shared_preferences: ^2.3.2
+  flutter_spinkit:
+  image_picker:
+
 
 dev_dependencies:
   flutter_test:

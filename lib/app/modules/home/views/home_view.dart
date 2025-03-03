@@ -52,12 +52,12 @@ class _HomeViewState extends State<HomeView>
                           text: 'Location',
                           fontSize: 12,
                           fontWeight: FontWeight.w400,
-                          color: AppColors.hintTextColor),
+                          color: AppColors.textSecondary),
                       Obx(() => DropdownButton<String>(
                             value: controller.selectedLocation.value,
                             icon: Icon(
                               Icons.keyboard_arrow_down_outlined,
-                              color: AppColors.hintTextColor,
+                              color: AppColors.textSecondary,
                             ),
                             items: ["Jakarta", "Bandung", "Bali"]
                                 .map((location) => DropdownMenuItem(
@@ -117,7 +117,7 @@ class _HomeViewState extends State<HomeView>
                     height: 48,
                     width: 48,
                     decoration: BoxDecoration(
-                      color: AppColors.primaryColor,
+                      color: AppColors.textPrimary,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Image.asset(AppIcons.filter),

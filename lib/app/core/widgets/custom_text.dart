@@ -1,36 +1,51 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../config/app_colors.dart';
-import '../config/app_sizes.dart';
+
+
+
 
 class CustomText extends StatelessWidget {
   final String text;
   final double? fontSize;
   final Color? color;
   final FontWeight? fontWeight;
-  final maxLines;
+  final int? maxLines;
   final TextOverflow? textOverflow;
+  final TextDecoration? decoration;
+  final Color? decorationColor;
 
+  final TextAlign? textAlign;
   const CustomText(
       {super.key,
-      required this.text,
-      this.maxLines,
-      this.textOverflow,
-      this.fontSize,
-      this.color,
-      this.fontWeight});
+        required this.text,
+        this.maxLines,
+        this.textOverflow,
+        this.fontSize,
+        this.color,
+        this.fontWeight,
+        this.decoration,
+        this.decorationColor, this.textAlign});
 
   @override
   Widget build(BuildContext context) {
     return Text(
+      textAlign: textAlign,
       text,
+
       style: GoogleFonts.poppins(
-          fontSize: fontSize ?? getWidth(14),
-          color: color ?? AppColors.bgColor,
-          fontWeight: fontWeight ?? FontWeight.w400),
+          decoration: decoration,
+          decorationColor: decorationColor ?? const Color(0xffA59F92),
+          fontSize: fontSize ?? 16,
+          //letterSpacing: 1,
+          color: color ?? AppColors.textPrimary,
+          fontWeight: fontWeight ?? FontWeight.w500),
       overflow: textOverflow,
       maxLines: maxLines,
+
     );
   }
 }

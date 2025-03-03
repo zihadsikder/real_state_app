@@ -174,7 +174,7 @@ class PropertyCard extends StatelessWidget {
                           CustomText(
                             text: "Rp 2,500,000 / Year",
                             fontSize: 12,
-                            color: AppColors.primaryColor,
+                            color: AppColors.textPrimary,
                           ),
                           SizedBox(height: 4),
                           Row(
@@ -184,7 +184,7 @@ class PropertyCard extends StatelessWidget {
                               CustomText(
                                 text: "8 Bedroom",
                                 fontSize: 12,
-                                color: AppColors.hintTextColor,
+                                color: AppColors.textSecondary,
                               ),
                               SizedBox(width: 16),
                               Image.asset(AppIcons.bath, width: 16, height: 16),
@@ -192,7 +192,7 @@ class PropertyCard extends StatelessWidget {
                               CustomText(
                                 text: "4 Bathroom",
                                 fontSize: 12,
-                                color: AppColors.hintTextColor,
+                                color: AppColors.textSecondary,
                               ),
                             ],
                           ),

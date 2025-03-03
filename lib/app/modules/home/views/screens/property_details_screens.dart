@@ -57,7 +57,7 @@ class PropertyDetailsScreen extends StatelessWidget {
                                   },
                                   icon: Icon(
                                     Icons.arrow_back_ios,
-                                    color: AppColors.bgColor,
+                                    color: AppColors.textSecondary,
                                     size: 16,
                                   )),
                             )),
@@ -105,7 +105,7 @@ class PropertyDetailsScreen extends StatelessWidget {
                                 CustomText(
                                   text: "6 Bedroom",
                                   fontSize: 12,
-                                  color: AppColors.bgColor,
+                                  color: AppColors.textSecondary,
                                 ),
                                 SizedBox(width: 32),
                                 Image.asset(AppIcons.bathroom,
@@ -114,7 +114,7 @@ class PropertyDetailsScreen extends StatelessWidget {
                                 CustomText(
                                   text: "4 Bathroom",
                                   fontSize: 12,
-                                  color: AppColors.bgColor,
+                                  color: AppColors.textSecondary,
                                 ),
                               ],
                             ),
@@ -142,7 +142,7 @@ class PropertyDetailsScreen extends StatelessWidget {
                           'The 3-level house that has a modern design, has a large pool and a garage that fits up to four cars... ',
                       style: TextStyle(
                         fontSize: 12,
-                        color: AppColors.hintTextColor,
+                        color: AppColors.textSecondary,
                       ),
                     ),
                     WidgetSpan(
@@ -154,7 +154,7 @@ class PropertyDetailsScreen extends StatelessWidget {
                           'Show More',
                           style: TextStyle(
                             fontSize: 12,
-                            color: AppColors.primaryColor,
+                            color: AppColors.textPrimary,
                           ),
                         ),
                       ),
@@ -194,7 +194,7 @@ class PropertyDetailsScreen extends StatelessWidget {
                       CustomText(
                           text: "Owner",
                           fontSize: 12,
-                          color: AppColors.hintTextColor),
+                          color: AppColors.textSecondary),
                     ],
                   ),
                   Spacer(),
@@ -292,7 +292,7 @@ class PropertyDetailsScreen extends StatelessWidget {
                               CustomText(
                                 text: "Price",
                                 fontSize: 12,
-                                color: AppColors.hintTextColor,
+                                color: AppColors.textSecondary,
                               ),
                               CustomText(
                                 text: "Rp. 2.500.000.000/ Year",
